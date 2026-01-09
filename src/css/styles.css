@@ -1256,3 +1256,69 @@ a {
         width: 400px;
     }
 }
+/* --- СТИЛИ ДЛЯ ЮРИДИЧЕСКИХ СТРАНИЦ --- */
+.pages {
+    padding: 100px 0;
+    min-height: 70vh;
+}
+
+.pages h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 50px;
+    line-height: 1;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 20px;
+}
+
+.pages h2 {
+    font-size: 1.8rem;
+    margin: 40px 0 20px;
+    text-transform: uppercase;
+}
+
+.pages p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    max-width: 800px;
+    opacity: 0.9;
+}
+
+.pages ul,
+.pages ol {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.pages li {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    position: relative;
+    list-style: none;
+}
+
+/* Кастомный маркер в стиле антидизайна */
+.pages ul li::before {
+    content: "—";
+    position: absolute;
+    left: -25px;
+    color: var(--accent-color);
+}
+
+.pages a {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.pages a:hover {
+    color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .pages {
+        padding: 60px 0;
+    }
+
+    .pages h1 {
+        font-size: 2rem;
+    }
+}
